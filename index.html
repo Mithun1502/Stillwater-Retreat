@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stillwater Retreat</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body
+    data-bs-spy="scroll"
+    data-bs-target=".navbar"
+    data-bs-offset="100"
+    tabindex="0"
+  >
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="/home.html" class="navbar-brand">
+          <div class="navbar-brand-div">
+            <div class="navbar-brand-div-left">
+              <i class="bi bi-leaf"></i>
+            </div>
+
+            <div class="navbar-brand-div-right">
+              <h4 class="brand-heading">Stillwater Retreat</h4>
+
+              <p class="brand-para">A Sanctuary for the soul</p>
+            </div>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#myNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <div
+            class="navbar-nav mx-auto d-flex justify-content-center align-items-center gap-3"
+          >
+            <div class="nav-item">
+              <a href="#retreats" class="nav-link">Retreats</a>
+            </div>
+
+            <div class="nav-item">
+              <a href="#rhythm" class="nav-link">Spritual Direction</a>
+            </div>
+
+            <div class="nav-item">
+              <a href="#" class="nav-link">Sacred Spaces</a>
+            </div>
+
+            <div class="nav-item">
+              <a href="#" class="nav-link">Resources</a>
+            </div>
+
+            <div class="nav-item">
+              <a href="#" class="nav-link">Connect</a>
+            </div>
+
+            <div class="nav-item mx-5">
+              <a href="#" class="moon-icon">
+                <i class="bi bi-moon"></i>
+              </a>
+            </div>
+
+            <div class="nav-item">
+              <a href="#retreats" class="book-a-retreat text-decoration-none">
+                Book a Retreat
+              </a>
+            </div>
+            <div class="nav-item">
+              <button
+                class="book-a-retreat"
+                data-bs-toggle="modal"
+                data-bs-target="#authModal"
+              >
+                Login / Signup
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-section">
+      <div class="hero-section-top-div">
+        <span class="hero-bible-verse">
+          "Be still, and know that I am God."
+        </span>
+        <span class="hero-bible-book">Psalm 46:10 </span>
+      </div>
+      <div class="hero-section-middle-div">
+        <span class="middle-div-heading">Find Rest for Your Soul</span>
+        <span class="middle-div-desc"
+          >Step away from the noise. Enter into silence. Discover the quiet
+          place where God meets you.
+        </span>
+      </div>
+      <div class="hero-section-bottom-div">
+        <a href="#retreats">
+          <button id="bookBtn" class="Explore">
+            Explore Retreats <i class="bi bi-arrow-right"></i>
+          </button>
+        </a>
+        <button id="Begin">Begin Spritual Direction</button>
+      </div>
+    </section>
+    <section id="rhythm" class="rhythm">
+      <div class="container">
+        <div class="rhythm-top">
+          <span class="badge-daily">Daily Office</span>
+          <span class="display-6 rhythm-heading">A Rhythm of Prayer</span>
+          <p class="rhythm-top-p">
+            Four times daily, our community gathers in the chapel to pray.
+            Guests are always welcome to join—or simply know that prayer is
+            being offered on their behalf.
+          </p>
+        </div>
+        <div class="rhythm-middle-div">
+          <div class="custom-card">
+            <div class="custom-card-top">
+              <i class="bi bi-brightness-high"></i>
+              <span class="rhythm-time">6.30 AM</span>
+            </div>
+            <div class="custom-card-bottom">
+              <span class="custom-card-bottom-top">Lauds</span>
+              <span class="custom-card-bottom-bottom"
+                >Morning prayer to greet the new day with gratitude</span
+              >
+            </div>
+          </div>
+          <div class="custom-card">
+            <div class="custom-card-top">
+              <i class="bi bi-brightness-alt-high"></i>
+              <span class="rhythm-time">12 PM</span>
+            </div>
+            <div class="custom-card-bottom">
+              <span class="custom-card-bottom-top">Midday Prayer</span>
+              <span class="custom-card-bottom-bottom"
+                >A brief pause to recenter in the middle of the day</span
+              >
+            </div>
+          </div>
+          <div class="custom-card">
+            <div class="custom-card-top">
+              <i class="bi bi-sunset"></i>
+              <span class="rhythm-time">5.30 PM</span>
+            </div>
+            <div class="custom-card-bottom">
+              <span class="custom-card-bottom-top">Vespers</span>
+              <span class="custom-card-bottom-bottom"
+                >Evening prayer as day transitions to night</span
+              >
+            </div>
+          </div>
+          <div class="custom-card">
+            <div class="custom-card-top">
+              <i class="bi bi-moon-stars"></i>
+              <span class="rhythm-time">8.30 PM</span>
+            </div>
+            <div class="custom-card-bottom">
+              <span class="custom-card-bottom-top">Compline</span>
+              <span class="custom-card-bottom-bottom"
+                >Night prayer to close the day in peaceful surrender</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="retreats" class="retreat-section container py-5">
+      <div class="retreat-heading-div text-center mb-5">
+        <span class="retreat-mini-heading">Sacred Journeys</span>
+        <h2 class="retreat-main-heading">Retreat Experiences</h2>
+        <p class="retreat-para">
+          Discover spaces of silence, healing, prayer, and renewal.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="retreat-card">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200"
+              class="img-fluid retreat-image"
+            />
+
+            <div class="retreat-card-body">
+              <span class="retreat-badge">Silent Retreat</span>
+
+              <div class="retreat-date mt-3">
+                <i class="bi bi-calendar3"></i>
+                April 14-19, 2025 · 5 Nights
+              </div>
+
+              <h3 class="retreat-title">Spring Silence Retreat</h3>
+
+              <p class="retreat-description">
+                Enter into deep stillness and spiritual renewal surrounded by
+                peaceful mountain beauty.
+              </p>
+
+              <div class="retreat-footer">
+                <span class="retreat-price">$795</span>
+
+                <button
+                  class="retreat-btn register-btn"
+                  data-package="Spring Silence Retreat"
+                >
+                  Register Now
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="retreat-card">
+            <img
+              src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1200"
+              class="img-fluid retreat-image"
+            />
+
+            <div class="retreat-card-body">
+              <span class="retreat-badge">Weekend Retreat</span>
+
+              <div class="retreat-date mt-3">
+                <i class="bi bi-calendar3"></i>
+                March 7-9, 2025 · 2 Nights
+              </div>
+
+              <h3 class="retreat-title">
+                Introduction to Contemplative Prayer
+              </h3>
+
+              <p class="retreat-description">
+                Learn silence, meditation, and contemplative practices for inner
+                peace.
+              </p>
+
+              <div class="retreat-footer">
+                <span class="retreat-price">$395</span>
+
+                <button
+                  class="retreat-btn register-btn"
+                  data-package="Introduction to Contemplative Prayer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#retreatModal"
+                >
+                  Register Now
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="retreat-card">
+            <img
+              src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=1200"
+              class="img-fluid retreat-image"
+            />
+
+            <div class="retreat-card-body">
+              <span class="retreat-badge">Day Retreat</span>
+
+              <div class="retreat-date mt-3">
+                <i class="bi bi-calendar3"></i>
+                First Saturday Monthly
+              </div>
+
+              <h3 class="retreat-title">Day of Rest</h3>
+
+              <p class="retreat-description">
+                A peaceful one-day retreat for silence, prayer, and reflection
+                in nature.
+              </p>
+
+              <div class="retreat-footer">
+                <span class="retreat-price">$85</span>
+
+                <button
+                  class="retreat-btn register-btn"
+                  data-package="Day of Rest"
+                  data-bs-toggle="modal"
+                  data-bs-target="#retreatModal"
+                >
+                  Register Now
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="retreat-card">
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200"
+              class="img-fluid retreat-image"
+            />
+
+            <div class="retreat-card-body">
+              <span class="retreat-badge">Week Retreat</span>
+
+              <div class="retreat-date mt-3">
+                <i class="bi bi-calendar3"></i>
+                June 8-16, 2025 · 8 Nights
+              </div>
+
+              <h3 class="retreat-title">Ignatian Spiritual Exercises</h3>
+
+              <p class="retreat-description">
+                Experience guided prayer, reflection, discernment, and spiritual
+                direction.
+              </p>
+
+              <div class="retreat-footer">
+                <span class="retreat-price">$1200</span>
+                <button
+                  class="retreat-btn register-btn"
+                  data-package="Ignatian Spiritual Exercises"
+                  data-bs-toggle="modal"
+                  data-bs-target="#retreatModal"
+                >
+                  Register Now
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="retreat-card">
+            <img
+              src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1200"
+              class="img-fluid retreat-image"
+            />
+
+            <div class="retreat-card-body">
+              <span class="retreat-badge">Guided Retreat</span>
+
+              <div class="retreat-date mt-3">
+                <i class="bi bi-calendar3"></i>
+                May 16-18, 2025 · 2 Nights
+              </div>
+
+              <h3 class="retreat-title">Healing & Restoration</h3>
+
+              <p class="retreat-description">
+                A retreat focused on emotional healing, rest, and spiritual
+                restoration.
+              </p>
+
+              <div class="retreat-footer">
+                <span class="retreat-price">$450</span>
+
+                <button
+                  class="retreat-btn register-btn"
+                  data-package="Healing & Restoration"
+                  data-bs-toggle="modal"
+                  data-bs-target="#retreatModal"
+                >
+                  Register Now
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="retreat-card">
+            <img
+              src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200"
+              class="img-fluid retreat-image"
+            />
+
+            <div class="retreat-card-body">
+              <span class="retreat-badge">Creative Retreat</span>
+
+              <div class="retreat-date mt-3">
+                <i class="bi bi-calendar3"></i>
+                April 25-27, 2025 · 2 Nights
+              </div>
+
+              <h3 class="retreat-title">Writer's Contemplative Retreat</h3>
+
+              <p class="retreat-description">
+                Connect creativity and spirituality through writing, silence,
+                and reflection.
+              </p>
+
+              <div class="retreat-footer">
+                <span class="retreat-price">$320</span>
+
+                <button
+                  class="retreat-btn register-btn"
+                  data-package="Writer's Contemplative Retreat"
+                  data-bs-toggle="modal"
+                  data-bs-target="#retreatModal"
+                >
+                  Register Now
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="connect-with-us py-5">
+        <div class="cws-top">
+          <span class="cws-top-badge">CONNECT WITH US</span>
+          <h3 class="cws-top-heading">We'd Love to Hear From You</h3>
+          <p class="cws-top-desc">
+            Have questions? Ready to register? Or just want to learn more? Reach
+            out— we're here to help.
+          </p>
+        </div>
+        <div class="cws-bottom">
+          <div class="cws-bottom-left">
+            <h3 class="mb-4">Send us a Message</h3>
+
+            <form class="row g-4">
+              <div class="col-md-6">
+                <label class="form-label">First Name</label>
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  placeholder="Enter first name"
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  placeholder="Enter last name"
+                />
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  placeholder="Enter email"
+                />
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Phone (optional)</label>
+                <input
+                  type="tel"
+                  class="form-control custom-input"
+                  placeholder="Enter phone number"
+                />
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">I'm interested in...</label>
+
+                <select class="form-select custom-input">
+                  <option selected disabled>Select an option</option>
+                  <option>Retreat Programs</option>
+                  <option>Spiritual Direction</option>
+                  <option>Sacred Spaces</option>
+                  <option>Volunteer Opportunities</option>
+                  <option>General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Message</label>
+
+                <textarea
+                  class="form-control custom-input"
+                  rows="6"
+                  placeholder="Tell us how we can help..."
+                ></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn submit-btn">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="cws-bottom-right">
+            <h3>Other ways to Connect</h3>
+            <div class="cws-bottom-right-card">
+              <i class="bi bi-chat-right"></i>
+              <div class="cws-bottom-right-card-right">
+                <h4>Email</h4>
+                <h6>welcome@stillwaterretreat.org</h6>
+                <p>We typically respond within 24-48 hours</p>
+              </div>
+            </div>
+            <div class="cws-bottom-right-card">
+              <i class="bi bi-telephone"></i>
+              <div class="cws-bottom-right-card-right">
+                <h4>Phone</h4>
+                <h6>(555) 234-5678</h6>
+                <p>Mon-Fri, 9:00 AM - 4:00 PM</p>
+              </div>
+            </div>
+            <div class="cws-bottom-right-card">
+              <i class="bi bi-compass"></i>
+              <div class="cws-bottom-right-card-right">
+                <h4>Address</h4>
+                <p>1247 Monastery Road Cedar Valley, OR 97330</p>
+              </div>
+            </div>
+            <div class="cws-bottom-right-social-links">
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-youtube"></i>
+            </div>
+            <div class="cws-map-iframe">
+              <div style="width: 100%">
+                <iframe
+                  width="100%"
+                  height="300"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=koodal%20Nagar&amp;maptype=roadmap&amp;zoom=14"
+                  ><a href="https://www.maps.ie/create-google-map/"
+                    >Embed directions map</a
+                  ></iframe
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container-fluid">
+      <footer class="footer-div">
+        <div class="footer-div-1">
+          <div class="footer-div-1-1st">
+            <i class="bi bi-leaf"></i>
+            <span class="footer-div-1-1st-header">Stillwater Retreat</span>
+          </div>
+          <div class="footer-div-1-2nd">
+            <p>
+              A contemplative retreat center offering silent retreats, spiritual
+              direction, and sacred spaces <br />for rest and renewal.
+            </p>
+          </div>
+          <div class="footer-div-1-3rd">
+            <div class="footer-div-1-3rd-subitem">
+              <i class="bi bi-chat-left-dots-fill"></i>
+              <span class="email">welcome@stillwaterretreat.org </span>
+            </div>
+            <div class="footer-div-1-3rd-subitem">
+              <i class="bi bi-telephone"></i>
+              <span class="email">+91-78512365214 </span>
+            </div>
+            <div class="footer-div-1-3rd-subitem">
+              <i class="bi bi-geo-fill"></i>
+              <span class="email">Thabaal Thanthi nagar </span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-div-2">
+          <span class="footer-div-2-heading">EXPERIENCE</span>
+          <div class="footer-div-2-links">
+            <a href="#">Retreats</a><a href="#">Spritual Decision</a
+            ><a href="#">Day Visits</a><a href="#"> Group Bookings</a>
+          </div>
+        </div>
+        <div class="footer-div-2">
+          <span class="footer-div-2-heading">EXPLORE</span>
+          <div class="footer-div-2-links">
+            <a href="#">Our Story</a><a href="#">Sacred Spaces</a
+            ><a href="#">Daily Offices</a><a href="#"> Resources</a>
+          </div>
+        </div>
+        <div class="footer-div-2">
+          <span class="footer-div-2-heading">CONNECT</span>
+          <div class="footer-div-2-links">
+            <a href="#">Contact us</a><a href="#">Newsletter</a
+            ><a href="#">Donate</a><a href="#"> Volunteer</a>
+          </div>
+        </div>
+        <div class="footer-div-end">
+          <span class="footer-div-end-heading" style="font-size: 35px"
+            >&#8500;&#8500;</span
+          ><span class="footer-div-end-quote"
+            >"Come to me, all you who are weary and burdened, and I will give
+            you rest."</span
+          >
+          <span class="footer-div-end-bibleversename">Mathew 11:28</span>
+        </div>
+      </footer>
+    </div>
+    <div class="modal fade" id="retreatModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content custom-modal">
+          <div class="modal-header border-0">
+            <div>
+              <h4 class="modal-main-title mb-0">Retreat Registration</h4>
+
+              <small class="text-secondary">
+                Complete your spiritual journey booking
+              </small>
+            </div>
+
+            <button
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <form id="retreatForm" class="row g-4">
+              <div class="col-12">
+                <label class="form-label"> Retreat Package </label>
+
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="retreatPackage"
+                  readonly
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label"> Full Name </label>
+
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="fullName"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label"> Email Address </label>
+
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  id="email"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label"> Phone Number </label>
+
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="phone"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label"> Number of Guests </label>
+
+                <select class="form-select custom-input" id="guests">
+                  <option>1 Person</option>
+                  <option>2 People</option>
+                  <option>3 People</option>
+                  <option>4+ People</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label"> Room Preference </label>
+
+                <select class="form-select custom-input" id="roomType">
+                  <option>Private Room</option>
+                  <option>Shared Room</option>
+                  <option>Garden View Suite</option>
+                  <option>Silent Cabin</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label"> Food Preference </label>
+
+                <select class="form-select custom-input" id="food">
+                  <option>Vegetarian</option>
+                  <option>Vegan</option>
+                  <option>Regular</option>
+                  <option>Gluten Free</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label"> Arrival Date </label>
+
+                <input type="date" class="form-control custom-input" />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label"> Departure Date </label>
+
+                <input type="date" class="form-control custom-input" />
+              </div>
+
+              <div class="col-12">
+                <label class="form-label"> Prayer Request / Notes </label>
+
+                <textarea
+                  class="form-control custom-input"
+                  rows="4"
+                  placeholder="Share anything you'd like us to pray for..."
+                ></textarea>
+              </div>
+
+              <div class="col-12">
+                <div
+                  class="p-4 rounded-4"
+                  style="
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                  "
+                >
+                  <div class="d-flex justify-content-between">
+                    <span>Total Retreat Cost</span>
+
+                    <strong>$795</strong>
+                  </div>
+
+                  <small class="text-secondary">
+                    Includes accommodation, meals, and guided sessions
+                  </small>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="modal-register-btn w-100">
+                  Confirm Retreat Booking
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="authModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+          <div class="modal-header border-0">
+            <h5 class="modal-title modal-main-title">Account Access</h5>
+
+            <button
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="auth-tabs">
+              <button class="auth-tab active" id="loginTab">Login</button>
+
+              <button class="auth-tab" id="signupTab">Signup</button>
+            </div>
+
+            <form id="loginForm">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  id="loginEmail"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control custom-input"
+                  id="loginPassword"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="modal-register-btn w-100">
+                Login
+              </button>
+            </form>
+
+            <form id="signupForm" class="d-none">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="signupName"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  id="signupEmail"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control custom-input"
+                  id="signupPassword"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="modal-register-btn w-100">
+                Create Account
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const navbar = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+      const bookBtn = document.getElementById("bookBtn");
+
+      bookBtn.addEventListener("click", () => {
+        document.getElementById("retreats").scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    </script>
+    <script>
+      const loginTab = document.getElementById("loginTab");
+      const signupTab = document.getElementById("signupTab");
+
+      const loginForm = document.getElementById("loginForm");
+      const signupForm = document.getElementById("signupForm");
+
+      loginTab.addEventListener("click", () => {
+        loginTab.classList.add("active");
+        signupTab.classList.remove("active");
+
+        loginForm.classList.remove("d-none");
+        signupForm.classList.add("d-none");
+      });
+
+      signupTab.addEventListener("click", () => {
+        signupTab.classList.add("active");
+        loginTab.classList.remove("active");
+
+        signupForm.classList.remove("d-none");
+        loginForm.classList.add("d-none");
+      });
+
+      const users = JSON.parse(localStorage.getItem("users")) || [];
+
+      signupForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById("signupName").value;
+        const email = document.getElementById("signupEmail").value;
+        const password = document.getElementById("signupPassword").value;
+
+        const existingUser = users.find((user) => user.email === email);
+
+        if (existingUser) {
+          alert("User already exists");
+          return;
+        }
+
+        const newUser = {
+          id: Date.now(),
+          name,
+          email,
+          password,
+        };
+
+        users.push(newUser);
+
+        localStorage.setItem("users", JSON.stringify(users));
+
+        alert("Signup Successful");
+
+        signupForm.reset();
+
+        loginTab.click();
+      });
+
+      loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const email = document.getElementById("loginEmail").value;
+        const password = document.getElementById("loginPassword").value;
+
+        const validUser = users.find(
+          (user) => user.email === email && user.password === password,
+        );
+
+        if (!validUser) {
+          alert("Invalid Credentials");
+          return;
+        }
+
+        localStorage.setItem("currentUser", JSON.stringify(validUser));
+
+        alert(`Welcome ${validUser.name}`);
+
+        loginForm.reset();
+
+        const authModal = bootstrap.Modal.getInstance(
+          document.getElementById("authModal"),
+        );
+
+        authModal.hide();
+
+        updateNavbar();
+      });
+
+      function updateNavbar() {
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+        const navbar = document.querySelector(".navbar-nav");
+
+        const existingProfile = document.getElementById("profileSection");
+
+        if (existingProfile) {
+          existingProfile.remove();
+        }
+
+        if (currentUser) {
+          const profileDiv = document.createElement("div");
+
+          profileDiv.classList.add("nav-item");
+
+          profileDiv.id = "profileSection";
+
+          profileDiv.innerHTML = `
+        <div class="d-flex align-items-center gap-3">
+          <span class="text-white fw-bold">
+            Hi, ${currentUser.name}
+          </span>
+
+          <button class="btn btn-danger btn-sm" id="logoutBtn">
+            Logout
+          </button>
+        </div>
+      `;
+
+          navbar.append(profileDiv);
+
+          document
+            .getElementById("logoutBtn")
+            .addEventListener("click", logoutUser);
+        }
+      }
+
+      function logoutUser() {
+        localStorage.removeItem("currentUser");
+
+        alert("Logged Out");
+
+        location.reload();
+      }
+
+      updateNavbar();
+
+      const registerButtons = document.querySelectorAll(".register-btn");
+
+      const retreatPackage = document.getElementById("retreatPackage");
+
+      registerButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+          if (!currentUser) {
+            alert("Please login first");
+
+            const authModal = new bootstrap.Modal(
+              document.getElementById("authModal"),
+            );
+
+            authModal.show();
+
+            return;
+          }
+
+          const packageName = button.getAttribute("data-package");
+
+          retreatPackage.value = packageName;
+        });
+      });
+
+      const retreatForm = document.getElementById("retreatForm");
+
+      retreatForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+        if (!currentUser) {
+          alert("Please login first");
+          return;
+        }
+
+        const packageName = document.getElementById("retreatPackage").value;
+
+        const fullName = document.getElementById("fullName").value;
+
+        const email = document.getElementById("email").value;
+
+        const phone = document.getElementById("phone").value;
+
+        const bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+
+        const alreadyBooked = bookings.find(
+          (booking) =>
+            booking.email === email && booking.packageName === packageName,
+        );
+
+        if (alreadyBooked) {
+          alert("You already booked this retreat");
+          return;
+        }
+
+        const booking = {
+          bookingId: "RET" + Math.floor(Math.random() * 100000),
+
+          userId: currentUser.id,
+
+          packageName,
+
+          fullName,
+
+          email,
+
+          phone,
+
+          bookedAt: new Date().toLocaleString(),
+        };
+
+        bookings.push(booking);
+
+        localStorage.setItem("bookings", JSON.stringify(bookings));
+
+        alert(`Booking Confirmed\nBooking ID: ${booking.bookingId}`);
+
+        retreatForm.reset();
+
+        const retreatModal = bootstrap.Modal.getInstance(
+          document.getElementById("retreatModal"),
+        );
+
+        retreatModal.hide();
+
+        console.log(bookings);
+      });
+      if (!currentUser) {
+        authModal.show();
+      } else {
+        retreatModal.show();
+      }
+    </script>
+  </body>
+</html>

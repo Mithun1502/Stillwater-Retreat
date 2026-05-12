@@ -533,7 +533,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2;
-  backdrop-filter: blur(15px);
+  filter: blur(10px);
 }
 .cws-top-badge {
   background-color: rgba(2, 132, 15, 0.4);
